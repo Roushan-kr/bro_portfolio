@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #111827;
+  color: #E5E7EB;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-card, .project-card, .experience-card {
+  background-color: #1F2937;
+  border: 1px solid #374151;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover, .project-card:hover, .experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.1), 0 4px 6px -2px rgba(56, 189, 248, 0.05);
+}
+
+.section-title {
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
